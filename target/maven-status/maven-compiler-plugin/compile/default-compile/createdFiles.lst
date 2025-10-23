@@ -1,0 +1,12 @@
+com\mycompany\ejemplotcp\Ensamblador.class
+com\mycompany\ejemplotcp\RunServer.class
+com\mycompany\ejemplotcp\iDespachador.class
+com\mycompany\ejemplotcp\ProcesadorServidor$ClienteInfo.class
+com\mycompany\ejemplotcp\RunClientA.class
+com\mycompany\ejemplotcp\ProcesadorCliente.class
+com\mycompany\ejemplotcp\RunClientB.class
+com\mycompany\ejemplotcp\DespachadorIntermitente.class
+com\mycompany\ejemplotcp\ListenerIntermitente.class
+com\mycompany\ejemplotcp\ProcesadorServidor.class
+com\mycompany\ejemplotcp\iProcesador.class
+com\mycompany\ejemplotcp\ProcesadorClienteB.class
