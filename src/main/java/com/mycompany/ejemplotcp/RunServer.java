@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 
-// --- Main del Servidor ---
+// --- Main del ServidorBlackBoard ---
 public class RunServer {
     public static void main(String[] args) {
         int PUERTO_SERVIDOR = 8000;
@@ -17,10 +17,10 @@ public class RunServer {
         iDespachador despachadorParaServidor = ensamblador.crearDespachador();
         
         // 1. Crear la lógica del servidor
-        iProcesador logicaServidor = new ProcesadorServidor(despachadorParaServidor);
+        iProcesador logicaServidor = new ServidorBlackBoard(despachadorParaServidor);
         
         // 2. Crear el listener del servidor
-        ListenerIntermitente servidorCentral = ensamblador.crearListener(PUERTO_SERVIDOR, logicaServidor);
+        ServerTCP servidorCentral = ensamblador.crearListener(PUERTO_SERVIDOR, logicaServidor);
         
         // 3. Iniciar el servidor (esto es un bucle infinito)
         try {

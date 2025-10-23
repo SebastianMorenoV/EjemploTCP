@@ -22,7 +22,7 @@ public class RunClientB {
 
     // ❗️❗️❗️ ATENCIÓN ❗️❗️❗️
     // ❗️❗️❗️ CAMBIA ESTA IP POR LA IP DE LA LAPTOP SERVIDORA ❗️❗️❗️
-    private static final String SERVIDOR_IP = "192.168.1.35"; // O "localhost" si pruebas en la misma PC
+    private static final String SERVIDOR_IP = "192.168.100.3"; // O "localhost" si pruebas en la misma PC
     
     private static final int SERVIDOR_PUERTO = 8000;
     
@@ -36,7 +36,7 @@ public class RunClientB {
 
         // 1. Iniciar NUESTRO PROPIO listener (en puerto 9002) en un hilo separado
         iProcesador logicaCliente = new ProcesadorClienteB();
-        ListenerIntermitente listenerCliente = ensamblador.crearListener(MI_PUERTO_DE_ESCUCHA, logicaCliente);
+        ServerTCP listenerCliente = ensamblador.crearListener(MI_PUERTO_DE_ESCUCHA, logicaCliente);
         
         new Thread(() -> {
             try {

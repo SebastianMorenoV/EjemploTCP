@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-// --- Clase de lógica para el Servidor Central ---
-class ProcesadorServidor implements iProcesador {
+// --- Clase de lógica para el ServidorBlackBoard Central ---
+class ServidorBlackBoard implements iProcesador {
     
     // --- CAMBIO AQUÍ ---
     // El "directorio" ahora guarda el ID y un objeto ClienteInfo (IP + Puerto)
@@ -14,7 +14,7 @@ class ProcesadorServidor implements iProcesador {
     
     private iDespachador despachador;
     
-    public ProcesadorServidor(iDespachador despachador) {
+    public ServidorBlackBoard(iDespachador despachador) {
         this.despachador = despachador;
     }
     

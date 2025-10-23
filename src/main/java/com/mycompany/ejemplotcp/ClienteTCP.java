@@ -2,7 +2,7 @@ package com.mycompany.ejemplotcp;
 import java.io.*;
 import java.net.Socket;
 
-public class DespachadorIntermitente implements iDespachador {
+public class ClienteTCP implements iDespachador {
 
     @Override
     public void enviar(String host, int puerto, String mensaje) throws IOException {

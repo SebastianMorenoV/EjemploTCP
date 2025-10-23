@@ -35,7 +35,7 @@ public class RunClientA {
 
         // 1. Iniciar NUESTRO PROPIO listener (en puerto 9001) en un hilo separado
         iProcesador logicaCliente = new ProcesadorCliente();
-        ListenerIntermitente listenerCliente = ensamblador.crearListener(MI_PUERTO_DE_ESCUCHA, logicaCliente);
+        ServerTCP listenerCliente = ensamblador.crearListener(MI_PUERTO_DE_ESCUCHA, logicaCliente);
         
         new Thread(() -> {
             try {

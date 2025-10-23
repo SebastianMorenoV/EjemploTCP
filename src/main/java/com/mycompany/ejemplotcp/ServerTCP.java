@@ -5,14 +5,14 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
 
-public class ListenerIntermitente {
+public class ServerTCP {
 
     private int puerto;
     private iProcesador procesador; // El "qué hacer"
     private volatile boolean ejecutando = true;
     private ServerSocket serverSocket;
 
-    public ListenerIntermitente(int puerto, iProcesador procesador) {
+    public ServerTCP(int puerto, iProcesador procesador) {
         this.puerto = puerto;
         this.procesador = procesador;
     }
