@@ -12,19 +12,9 @@ public class RunServer {
         System.out.println("Iniciando Servidor Central...");
         
         Ensamblador ensamblador = new Ensamblador();
-        
-        // El servidor también necesita un despachador para "hablarle" a los clientes
-        iDespachador despachadorParaServidor = ensamblador.crearDespachador();
-        
-        // 1. Crear la lógica del servidor
-        iProcesador logicaServidor = new ServidorBlackBoard(despachadorParaServidor);
-        
-        // 2. Crear el listener del servidor
-        ServerTCP servidorCentral = ensamblador.crearListener(PUERTO_SERVIDOR, logicaServidor);
-        
         // 3. Iniciar el servidor (esto es un bucle infinito)
         try {
-            servidorCentral.iniciar();
+            ensamblador.iniciarServidor(PUERTO_SERVIDOR);
         } catch (IOException e) {
             System.err.println("El servidor principal falló: " + e.getMessage());
         }

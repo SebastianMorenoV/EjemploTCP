@@ -1,4 +1,7 @@
 package com.mycompany.ejemplotcp;
+
+import java.io.IOException;
+
 public interface iProcesador {
     /**
      * @param ipRemitente La IP de quien envió el mensaje
@@ -6,4 +9,6 @@ public interface iProcesador {
      * @return Una respuesta para el remitente.
      */
     String procesar(String ipRemitente, String mensaje);
+    
+    void iniciarServidor(int puerto) throws IOException;
 }
