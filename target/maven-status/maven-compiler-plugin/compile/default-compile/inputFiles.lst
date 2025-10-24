@@ -1,9 +1,11 @@
-C:\Users\Sebastian Moreno\Documents\NetBeansProjects\EjemploTCP\src\main\java\com\mycompany\ejemplotcp\ProcesadorServidor.java
+C:\Users\Sebastian Moreno\Documents\NetBeansProjects\EjemploTCP\src\main\java\com\mycompany\ejemplotcp\iListener.java
+C:\Users\Sebastian Moreno\Documents\NetBeansProjects\EjemploTCP\src\main\java\com\mycompany\ejemplotcp\ServerTCP.java
 C:\Users\Sebastian Moreno\Documents\NetBeansProjects\EjemploTCP\src\main\java\com\mycompany\ejemplotcp\RunClientA.java
 C:\Users\Sebastian Moreno\Documents\NetBeansProjects\EjemploTCP\src\main\java\com\mycompany\ejemplotcp\Ensamblador.java
-C:\Users\Sebastian Moreno\Documents\NetBeansProjects\EjemploTCP\src\main\java\com\mycompany\ejemplotcp\DespachadorIntermitente.java
-C:\Users\Sebastian Moreno\Documents\NetBeansProjects\EjemploTCP\src\main\java\com\mycompany\ejemplotcp\ListenerIntermitente.java
+C:\Users\Sebastian Moreno\Documents\NetBeansProjects\EjemploTCP\src\main\java\com\mycompany\ejemplotcp\ServidorBlackBoard.java
 C:\Users\Sebastian Moreno\Documents\NetBeansProjects\EjemploTCP\src\main\java\com\mycompany\ejemplotcp\iDespachador.java
-C:\Users\Sebastian Moreno\Documents\NetBeansProjects\EjemploTCP\src\main\java\com\mycompany\ejemplotcp\RunClientB.java
+C:\Users\Sebastian Moreno\Documents\NetBeansProjects\EjemploTCP\src\main\java\com\mycompany\ejemplotcp\ServerUDP.java
 C:\Users\Sebastian Moreno\Documents\NetBeansProjects\EjemploTCP\src\main\java\com\mycompany\ejemplotcp\RunServer.java
+C:\Users\Sebastian Moreno\Documents\NetBeansProjects\EjemploTCP\src\main\java\com\mycompany\ejemplotcp\ClienteTCP.java
 C:\Users\Sebastian Moreno\Documents\NetBeansProjects\EjemploTCP\src\main\java\com\mycompany\ejemplotcp\iProcesador.java
+C:\Users\Sebastian Moreno\Documents\NetBeansProjects\EjemploTCP\src\main\java\com\mycompany\ejemplotcp\ProcesadorCliente.java

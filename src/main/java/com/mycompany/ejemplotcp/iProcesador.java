@@ -1,14 +1,15 @@
 package com.mycompany.ejemplotcp;
 
-import java.io.IOException;
-
+/**
+ * Contrato para la LÓGICA de la aplicación.
+ * Define "qué hacer" cuando se recibe un mensaje.
+ */
 public interface iProcesador {
     /**
-     * @param ipRemitente La IP de quien envió el mensaje
-     * @param mensaje El mensaje de texto recibido.
-     * @return Una respuesta para el remitente.
+     * Procesa un mensaje entrante de un cliente específico.
+     * @param ipCliente La IP del remitente.
+     * @param mensaje El contenido del mensaje.
+     * @return Una respuesta para enviar de vuelta al remitente original.
      */
-    String procesar(String ipRemitente, String mensaje);
-    
-    void iniciarServidor(int puerto) throws IOException;
+    String procesar(String ipCliente, String mensaje);
 }

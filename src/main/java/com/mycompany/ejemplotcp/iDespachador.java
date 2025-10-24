@@ -1,18 +1,18 @@
 package com.mycompany.ejemplotcp;
+
 import java.io.IOException;
 
 /**
- * Define el contrato para ENVIAR un mensaje de forma intermitente.
- * Se conecta, envía y se desconecta.
+ * Contrato para el TRANSPORTE DE ENVÍO.
+ * Define "cómo enviar" un mensaje a un destino.
  */
 public interface iDespachador {
-    
     /**
-     * Envía un mensaje a un destino específico.
-     * @param host El host del destinatario (IP)
-     * @param puerto El puerto del destinatario
-     * @param mensaje El mensaje a enviar
-     * @throws IOException Si ocurre un error de red
+     * Envía un mensaje a un host y puerto específicos.
+     * @param host La IP del destino.
+     * @param puerto El puerto del destino.
+     * @param mensaje El mensaje a enviar.
+     * @throws IOException Si ocurre un error de red.
      */
     void enviar(String host, int puerto, String mensaje) throws IOException;
 }
